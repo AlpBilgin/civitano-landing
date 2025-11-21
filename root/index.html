@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" hreflang="de" href="index.html" />
+    <link rel="alternate" hreflang="en" href="index_en.html" />
+    <link rel="alternate" hreflang="x-default" href="index.html" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Civitano Landingpage</title>
   </head>
@@ -22,6 +25,10 @@
         alt="CIVITANO Logo"
         class="h-10 md:h-12"
       />
+      <!-- Language selector -->
+      <div class="ml-auto">
+        <a href="index_en.html" class="inline-flex items-center px-3 py-2 rounded text-sm uppercase tracking-wide text-white hover:underline" aria-label="Switch to English" hreflang="en">EN</a>
+      </div>
     </header>
 
     <section
@@ -91,7 +98,6 @@
     </section>
     <!-- Lage Section -->
     <section class="py-20 max-w-6xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         <div class="text-center">
           <h2 class="text-3xl font-light mb-4">
             Mittendrin statt nebenan – Zuhause zwischen Neukölln & Britz
@@ -109,8 +115,6 @@
             fürs tägliche Leben, der Hermannplatz für Action: alles super
             angebunden, ohne mitten im Chaos zu landen.
           </p>
-        </div>
-        <div>
           <h3 class="text-xl font-light mb-4">
             Top angebunden – egal wie du unterwegs
             bist
@@ -127,7 +131,6 @@
             <strong> Kurz gesagt:</strong> Urban genug zum Leben, ruhig genug
             zum Wohnen.
           </p>
-        </div>
       </div>
     </section>
 
