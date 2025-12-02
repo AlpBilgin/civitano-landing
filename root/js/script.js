@@ -830,7 +830,7 @@ function initializeLightbox() {
 
 // Initialize OpenStreetMap (Leaflet) map for the location section
 function initializeLocationMap() {
-    const address = 'Bürgerstr. 55, 12347 Berlin';
+    const address = 'Bürgerstr. 78, 12347 Berlin';
     const mapEl = document.getElementById('map');
     if (!mapEl) return;
 
@@ -857,7 +857,7 @@ function initializeLocationMap() {
                         }).addTo(map);
 
                         const marker = L.marker([lat, lon]).addTo(map);
-                        marker.bindPopup('<strong>Bürgerstr. 55</strong><br>12347 Berlin').openPopup();
+                        marker.bindPopup('<strong>Bürgerstr. 78</strong><br>12347 Berlin').openPopup();
                         console.log('Leaflet map initialized at', lat, lon);
                     } catch (e) {
                         console.error('Leaflet map initialization error:', e);
