@@ -39,19 +39,20 @@
   <body class="font-sans text-gray-900">
     <!-- Hero Section -->
     <header
-      class="absolute top-0 left-0 w-full z-20 flex justify-start items-center px-8 py-6"
+      class="absolute top-0 left-0 w-full z-20 flex flex-row md:flex-row justify-between items-center px-8 py-6"
     >
-      <img
-        src="images/civitano_logo.png"
-        alt="CIVITANO Logo"
-        class="h-10 md:h-12"
-      />
-      &nbsp;&nbsp;&nbsp;
-      <img
-        src="images/NEU_Klein_Logo mit CIC 1.jpg"
-        alt="CIVITANO Logo"
-        class="h-10 md:h-12"
-      />
+      <div class="flex flex-col gap-2 md:flex-row md:gap-4">
+        <img
+          src="images/civitano_logo.png"
+          alt="CIVITANO Logo"
+          class="h-10 md:h-12"
+        />
+        <img
+          src="images/NEU_Klein_Logo mit CIC 1.jpg"
+          alt="CIVITANO Logo"
+          class="h-10 md:h-12"
+        />
+      </div>
       <!-- Language selector -->
       <div class="ml-auto">
         <a
@@ -89,15 +90,13 @@
           Exklusive Gartenwohnung <br />
           Bauhaus-Architektur
         </p>
-        <div class="flex flex-col md:flex-row gap-4 justify-center">
-          <a href="#kontakt">
-            <button
-              class="px-8 py-4 bg-[#7EB422] text-white text-sm uppercase tracking-wide shadow-lg hover:bg-gray-200 transition"
-            >
-              Exposé anfordern
-            </button>
-          </a>
-        </div>
+        <a href="#kontakt">
+          <div
+            class="max-w-3xl mx-auto px-8 py-4 bg-[#7EB422] text-white text-sm uppercase tracking-wide shadow-lg hover:bg-gray-200 transition"
+          >
+            Exposé anfordern
+          </div>
+        </a>
       </div>
     </section>
 
@@ -154,7 +153,7 @@
           Ausgewählte Grundrisse
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         <div class="flex flex-col md:flex-row gap-4 justify-center">
           <a href="assets/civitano_Grundriss_WE06.pdf" target="_blank">
             <button
@@ -251,13 +250,12 @@
       id="kontakt"
       class="w-full py-10 bg-gray-100 bg-gradient-to-b from-[#F6F6F6] to-[#FEFEFE]"
     >
-    <div
-          class="max-w-3xl mx-auto mb-6 text-white rounded-md bg-[rgb(1,72,130)] flex items-center justify-center text-center"
-        >
-          <p class="my-6 text-3xl font-light">Jetzt Exposé erhalten</p>
-        </div>
+      <div
+        class="max-w-3xl mx-auto mb-6 text-white rounded-md bg-[rgb(1,72,130)] flex items-center justify-center text-center"
+      >
+        <p class="my-6 text-3xl font-light">Jetzt Exposé erhalten</p>
+      </div>
       <div class="max-w-3xl mx-auto">
-        
         <p class="text-gray-700 mb-8 text-center">
           Wir senden Ihnen Details per E-Mail. Unverbindlich &
           datenschutzkonform.
