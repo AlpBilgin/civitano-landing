@@ -292,12 +292,11 @@
             <option>I am an owner-occupier</option>
             <option>I am an investor</option>
           </select>
-          <textarea
-            class="border p-3 rounded bg-gray-100 min-h-[120px]"
-            placeholder="Addresse"
-            id="adresse"
-            name="adresse"
-          ></textarea>
+           <input
+            type="hidden"
+            name="sprache"
+            value="Englisch"
+          />
           <textarea
             class="border p-3 rounded bg-gray-100 min-h-[120px]"
             placeholder="Your message"
@@ -349,6 +348,20 @@
         </p>
       </div>
     </section>
+
+            <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner show">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h4 class="cookie-header">Diese Website verwendet Cookies.</h4>
+          <p>Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren und unseren Traffic zu analysieren. Wir geben Informationen über Ihre Nutzung unserer Website auch an unsere Social-Media-, Werbe- und Analysepartner weiter, die diese möglicherweise mit anderen Informationen kombinieren, die Sie ihnen zur Verfügung gestellt haben oder die sie durch Ihre Nutzung ihrer Dienste gesammelt haben.</p>
+        </div>
+        <div class="cookie-buttons">
+          <button class="btn-cookie btn-cookie-reject" onclick="rejectCookies()">Ablehnen</button>
+          <button class="btn-cookie btn-cookie-accept" onclick="acceptCookies()">Akzeptieren</button>
+        </div>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
