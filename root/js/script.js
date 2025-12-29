@@ -655,7 +655,7 @@ function initializeHeroSlideshow() {
         'images/Fassadenansicht_low_res.jpg',
         'images/Hagelberger_DG_Wohnbereich_quer_low_res.jpg',
         'images/Hagelberger_EG_quer.jpg',
-        'images/Dachgeschoss.jpg',
+        'images/img5.jpg',
         'images/Hofseite_low_res.jpg'
     ];
 
