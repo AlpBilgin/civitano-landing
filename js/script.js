@@ -616,7 +616,9 @@ function acceptCookies () {
         height="0"
         width="0"
         style="display: none; visibility: hidden">
-    </iframe>`;
+    </iframe>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PP6FZZEDW6"></script>
+    <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());   gtag('config', 'G-PP6FZZEDW6'); </script>`;
     
     // Insert as first child of body
     document.body.insertBefore(noscript, document.body.firstChild);
