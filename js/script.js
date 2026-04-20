@@ -15,7 +15,19 @@ function initializeWebsite() {
     initializeHeroSlideshow();
     initializeLocationMap();
     initializeLazyLoading();
+    initializeCookieBanner();
    lang = document.documentElement.lang;
+}
+
+function     initializeCookieBanner(){
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+    const cookieBanner = document.getElementById('cookieBanner');
+
+    if (!cookiesAccepted && cookieBanner) {
+        cookieBanner.classList.add('show');
+    } else if (cookieBanner) {
+        cookieBanner.classList.remove('show');
+    }
 }
 
 // Navigation functionality
@@ -610,6 +622,7 @@ window.copyToClipboard = copyToClipboard;
 
 
 function acceptCookies () {
+    localStorage.setItem('cookiesAccepted', 'true');
     const noscript = document.createElement('noscript');
     noscript.innerHTML = `<iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-P87H2RTP"
@@ -641,6 +654,7 @@ function acceptCookies () {
 }
 
 function rejectCookies(){
+    localStorage.setItem('cookiesAccepted', 'false');
     const cookieBanner = document.getElementById('cookieBanner');
     if (cookieBanner) {
         cookieBanner.classList.remove('show');
